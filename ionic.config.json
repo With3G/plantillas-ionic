@@ -1,5 +1,7 @@
 {
   "name": "plantillas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

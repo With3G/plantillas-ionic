@@ -1,3 +1,27 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Añadimos el when md para definir que se muestre en una pantalla mediana el split pane: -->
+  <ion-split-pane when="lg" contentId="principal">
+    <ion-menu side="start" menuId="primerMenu" contentId="principal"><!-- El menuId es el identificador unico del menu y el contentId es el identificador del contenedor que va a empujar el menu -->
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu Principal</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle autoHide="false" *ngFor="let c of componentes | async">
+            <ion-item [routerLink]="c.redirectTo">
+                <ion-icon slot="start" [name]="c.icon"></ion-icon>
+                <ion-label>{{ c.name }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+    
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+ 
+    <ion-router-outlet id="principal"></ion-router-outlet>
+
+  </ion-split-pane>
+
 </ion-app>

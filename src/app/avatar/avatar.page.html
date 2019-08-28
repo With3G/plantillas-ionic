@@ -1,0 +1,26 @@
+<app-header titulo="Avatar"></app-header>
+
+<ion-content>
+  <!-- Podemos poner avatares circulares con ion-avatar: -->
+    <ion-avatar>
+      <img src="/assets/0.jpeg">
+    </ion-avatar>
+  <!-- Hacemos lo mismo en una lista -->
+  <ion-list>
+    <!-- Vamos a repetir el ion-item varias veces para probar: -->
+    <ion-item *ngFor="let i of [1,1,1,1,1,1,1,1,1,1]">
+      <ion-avatar slot="start">
+        <img src="/assets/0.jpeg">
+      </ion-avatar>
+      <ion-label>Guillermo Granados Gómez</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- vamos a probar en un ion-chip -->
+  <ion-chip color="primary" *ngFor="let i of [1,1,1]">
+    <ion-avatar>
+      <img src="/assets/0.jpeg">
+    </ion-avatar>
+    <ion-label>Guillermo Granados Gómez</ion-label>
+  </ion-chip>
+</ion-content>

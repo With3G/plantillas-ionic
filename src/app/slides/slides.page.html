@@ -1,0 +1,33 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <img src="/assets/slides/user-6.svg" class="avatar animated fadeIn">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Volvemos a construir el ion-slide: -->
+  <ion-slides pager="true" class="slide-full">
+    
+    <ion-slide *ngFor="let slide of slides">
+      <ion-card mode="ios">
+        <!-- La propiedad src va entre corchetes porque trabajamos con una variable de tipo array u objeto: -->
+        <img [src]="slide.img" class="slide-image">
+
+        <ion-card-header>
+          <ion-card-title>{{slide.titulo}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{slide.desc}}
+        </ion-card-content>
+
+      </ion-card>
+    </ion-slide>
+    <!-- Vamos a crear como ultimo slide el botón de regreso: -->
+    <ion-slide>
+      <ion-button expand="full" color="primary" fill="clear" (click)="onClick()">Comenzar!</ion-button>
+    </ion-slide>
+
+  </ion-slides>
+  
+</ion-content>

@@ -1,0 +1,12 @@
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content>
+  <ion-list>
+      <!-- Creamos un bucle for para mostrar todos los checkbox: -->
+    <ion-item *ngFor="let checkbox of data" (click)="onClick( checkbox )"><!-- Leemos cuales se han seleccionado con el método onClick() -->
+      <ion-label>{{checkbox.name}}</ion-label>
+      <!-- Cargamos la propiedad selected en el ngModel y el color se cambiará dinámicamente gracias a que el nombre coincide con los colores: -->
+      <ion-checkbox [(ngModel)]="checkbox.selected" [color]="checkbox.name"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

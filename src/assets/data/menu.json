@@ -1,0 +1,92 @@
+[
+    {
+      "icon": "american-football",
+      "name": "Action Sheet",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "appstore",
+      "name": "Alert",
+      "redirectTo": "/alert"
+    }, { 
+      "icon": "beaker",
+      "name": "Avatar",
+      "redirectTo": "/avatar"
+    }, { 
+      "icon": "radio-button-on",
+      "name": "Botones y Router",
+      "redirectTo": "/botones"
+    }, { 
+      "icon": "card",
+      "name": "Tarjetas",
+      "redirectTo": "/tarjetas"
+    }, { 
+      "icon": "checkmark-circle-outline",
+      "name": "Checkbox",
+      "redirectTo": "/checkbox"
+    }, {
+      "icon": "calendar",
+      "name": "Fechas",
+      "redirectTo": "/fechas"
+    }, { 
+      "icon": "car",
+      "name": "Fab",
+      "redirectTo": "/fab"
+    }, {
+      "icon": "grid",
+      "name": "Grid",
+      "redirectTo": "/grid"
+    }, { 
+      "icon": "infinite",
+      "name": "Infinite Scroll",
+      "redirectTo": "/infinite-scroll"
+    }, { 
+      "icon": "hammer",
+      "name": "Formularios",
+      "redirectTo": "/formularios"
+    }, { 
+      "icon": "list",
+      "name": "Listados",
+      "redirectTo": "/listados"
+    }, {
+      "icon": "reorder",
+      "name": "Reordenar",
+      "redirectTo": "/reordenar"
+    }, { 
+      "icon": "refresh-circle",
+      "name": "Loading",
+      "redirectTo": "/loading"
+    }, {
+        "icon":"phone-portrait",
+        "name": "Modal",
+        "redirectTo": "/modal"
+    }, {
+      "icon": "tablet-portrait",
+      "name": "Popover",
+      "redirectTo": "/popover"
+    }, {
+      "icon": "code-working",
+      "name": "Progreso y rango",
+      "redirectTo": "/progreso"
+    }, {
+      "icon": "arrow-round-down",
+      "name": "Refrescar",
+      "redirectTo": "/refrescar"
+    }, {
+      "icon": "search",
+      "name": "Busqueda",
+      "redirectTo": "/busqueda"
+    }, {
+      "icon": "copy",
+      "name": "Segmentos",
+      "redirectTo": "/segmentos"
+    }, {
+      "icon": "albums",
+      "name": "Slides",
+      "redirectTo": "/slides"
+    }, {
+      "icon": "cog",
+      "name": "Tabs",
+      "redirectTo": "/tabs"
+    }
+  ]

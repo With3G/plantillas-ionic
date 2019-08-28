@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <!-- Tenemos la botonera para añadir varios botones y va siempre dentro de ion-toolbar: -->
+    <ion-buttons slot="start">
+      <!-- tenemos el back buttom con su propiedad de url por defecto a la que retornar: -->
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>botones</ion-title>
+    <ion-buttons slot="end">
+      <!-- para mostrar un icono nada más añadimos un ion-icon -->
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Botones normales -->
+  <ion-button size="small">Pequeño</ion-button>
+  <ion-button size="default">Mediano</ion-button>
+  <ion-button size="large">Grande</ion-button>
+  <ion-button expand="full">Ancho completo</ion-button>
+  <ion-button size="large" expand="full">Propiedades combinadas</ion-button>
+  <!-- Como se enlazan las páginas y establecer colores -->
+  <ion-button routerLink="/alert" expand="full" color="tertiary">
+    Enlace a otra pagina
+  </ion-button>
+  <!-- Añadir una clase -->
+  <ion-button expand="full" class="top-20">Boton con clase css personalizada</ion-button>
+
+  <!-- ion-row + ion-col -->
+  <!-- filas con ion-row -->
+  <ion-row>
+    <!-- columnas con ion-col -->
+    <ion-col>
+      <ion-button expand="full" color="danger">Botón izq.</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="tertiary">Botón der.</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- Botones con llenado o fill -->
+  <ion-button fill="clear" class="top-20">clear</ion-button>
+  <ion-button fill="outline" class="top-20">Outline</ion-button>
+  <ion-button fill="solid" class="top-20">Solid</ion-button>
+</ion-content>
